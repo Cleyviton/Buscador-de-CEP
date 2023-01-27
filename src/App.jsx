@@ -15,7 +15,6 @@ function App() {
 
     try {
       const requisicao = await api.get(`${inputValue}/json/`);
-      console.log(requisicao.data);
       setEndereco(requisicao.data);
       setInputValue("");
     } catch {
